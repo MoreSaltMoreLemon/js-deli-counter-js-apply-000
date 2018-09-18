@@ -1,14 +1,16 @@
 let deliLine = [];
+let lineNumber = 0;
 
 function takeANumber(line, name) {
-  return `Welcome, ${name}. You are number ${line.push(name)} in line.`;
+  lineNumber++;
+  return `Welcome, ${name}. You are number ${line.push(lineNumber)} in line.`;
 }
 
 function nowServing(line) {
-  let first = line.shift();
   if (line.length == 0) {
     return "There is nobody waiting to be served!";
   } else {
+    let first = line.shift();
     return `Currently serving ${first}.`;
   }
 }
