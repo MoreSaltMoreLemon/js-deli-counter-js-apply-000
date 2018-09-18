@@ -3,7 +3,7 @@ let lineNumber = 0;
 
 function takeANumber(line, name) {
   lineNumber++;
-  return `Welcome, ${name}. You are number ${line.push(lineNumber)} in line.`;
+  return `Welcome, ${name}. You are number ${line.push(name)} in line.`;
 }
 
 function nowServing(line) {
